@@ -36,6 +36,13 @@ public class AirPurifier {
         AirPurifier a = new AirPurifier("Simplus","Pro");
         System.out.println(a.getAirQuality(30));
         a.setMode(a.getAirQuality(30));
+        a.turnOn();
+        System.out.println(a.power);
+        a.turnOff();
+        System.out.println(a.power);
         System.out.println(AirPurifier.mostPopularmodel("DYSON"));
+        System.out.println(AirPurifier.partOfMostOrder);
+        System.out.println(AirPurifier.makeCount);
+        System.out.println(AirPurifier.mostPopularMake());
     }
 }
